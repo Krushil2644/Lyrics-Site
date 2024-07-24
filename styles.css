@@ -40,16 +40,11 @@ main {
     margin-bottom: 48px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite alternate;
+    transition: transform 0.3s ease;
 }
 
-@keyframes pulse {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.05);
-    }
+.verse:hover, .chorus:hover {
+    transform: scale(1.05);
 }
 
 .verse p {
